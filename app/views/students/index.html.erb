@@ -7,6 +7,7 @@
       <tr class="table-active">
         <th scope="col">Name</th>
         <th scope="col">Age</th>
+        <th scope="col">Email</th>
         <th scope="col" colspan="3"></th>
       </tr>
     </thead>
@@ -16,6 +17,7 @@
         <tr class="table-active">
           <td scope="row"><%= student.name %></td>
           <td scope="row"><%= student.age %></td>
+          <td scope="row"><%= student.email %></td>
           <td scope="row"><%= link_to 'Show', student, class:"btn btn-primary"%></td>
 
           <td><%= link_to 'Edit', edit_student_path(student), class:"btn btn-success" %></td>
