@@ -1,0 +1,21 @@
+<div class="container">
+  
+  <table class="table table-hover text-white">
+    <thead>
+      <tr class="table-active">
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col" colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @students.each do |student| %>
+        <tr class="table-active">
+          <td scope="row"><%= student.name %></td>
+          <td scope="row"><%= student.email %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
